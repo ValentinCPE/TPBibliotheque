@@ -37,11 +37,11 @@ public class PersonneTest {
      * Test of getNumero method, of class Personne.
      */
     
-    @Ignore
     @Test
     public void testGetNumero() {
         Personne alan = new Personne("Turing", "Alan", 1912);
-        assertEquals(1, alan.getNumero());
+        Personne fanny = new Personne("Velien", "Fanny", 1998);
+        assertEquals(alan.getNumero()+1, fanny.getNumero());
     }
 
     /**
@@ -71,14 +71,6 @@ public class PersonneTest {
         assertEquals(1912, alan.getAnNaissance());
     }
 
-    /**
-     * Test of getDernierNum method, of class Personne.
-     */
-    @Ignore
-    @Test
-    public void testGetDernierNum() {
-        fail("Test à implémenter plus tard");
-    }
 
     /**
      * Test of setNumPers method, of class Personne.

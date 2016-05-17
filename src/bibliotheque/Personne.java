@@ -61,13 +61,6 @@ public class Personne {
         return this.anNaissance;
     }
     
-    /**
-     * Obtention Dernier numéro
-     * @return DernierNum
-     */
-    public int getDernierNum(){
-        return 0;
-    }
     
     /**
      * Changement variable Numéro Personne
