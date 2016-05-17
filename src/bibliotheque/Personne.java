@@ -23,7 +23,10 @@ public class Personne {
      * @param anneenaiss : année de naissance de la personne
      */
     public Personne(String nom,String prenom,int anneenaiss){
-        
+        this.numeroPers = dernierNumero ++;
+        this.nomPers = nom;
+        this.prenomPers = prenom;
+        this.anNaissance = anneenaiss;
     }
     
     /**
@@ -31,7 +34,7 @@ public class Personne {
      * @return NumeroPersonne
      */
     public int getNumero(){
-        return 0;
+        return this.numeroPers;
     }
     
     /**
@@ -39,7 +42,7 @@ public class Personne {
      * @return NomPersonne
      */
     public String getNom(){
-        return "";
+        return this.nomPers;
     }
     
     /**
@@ -47,7 +50,7 @@ public class Personne {
      * @return PrenomPersonne
      */
     public String getPrenom(){
-        return "";
+        return this.prenomPers;
     }
     
     /**
@@ -55,7 +58,7 @@ public class Personne {
      * @return AnneeNaissance
      */
     public int getAnNaissance(){
-        return 0;
+        return this.anNaissance;
     }
     
     /**
@@ -71,7 +74,7 @@ public class Personne {
      * @param numero : numeroPersonne
      */
     public void setNumPers(int numero){
-        
+        this.numeroPers = numero;
     }
     
     /**
@@ -79,7 +82,7 @@ public class Personne {
      * @param nom : nomPersonne
      */
     public void setNomPers(String nom){
-        
+        this.nomPers = nom;
     }
     
     /**
@@ -87,7 +90,7 @@ public class Personne {
      * @param prenom : prenomPersonne
      */
     public void setPrenomPers(String prenom){
-        
+        this.prenomPers = prenom;
     }
     
     /**
@@ -95,7 +98,7 @@ public class Personne {
      * @param annee : AnNaissance
      */
     public void setAnNaissance(int annee){
-        
+        this.anNaissance = annee;
     }
     
     /**
@@ -103,7 +106,7 @@ public class Personne {
      * @return chaîne
      */
     public String toString(){
-        return "";
+        return (this.nomPers+", "+this.prenomPers+", "+this.anNaissance);
     }
     
 }
