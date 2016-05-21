@@ -13,7 +13,7 @@ public class Personne {
     private int numeroPers;
     private String nomPers;
     private String prenomPers;
-    private int anNaissance;
+    private int anNaissancePers;
     private static int dernierNumero = 1;
     
     /**
@@ -26,7 +26,7 @@ public class Personne {
         this.numeroPers = dernierNumero ++;
         this.nomPers = nom;
         this.prenomPers = prenom;
-        this.anNaissance = anneenaiss;
+        this.anNaissancePers = anneenaiss;
     }
     
     /**
@@ -58,7 +58,7 @@ public class Personne {
      * @return AnneeNaissance
      */
     public int getAnNaissance(){
-        return this.anNaissance;
+        return this.anNaissancePers;
     }
     
     
@@ -91,7 +91,7 @@ public class Personne {
      * @param annee : AnNaissance
      */
     public void setAnNaissance(int annee){
-        this.anNaissance = annee;
+        this.anNaissancePers = annee;
     }
     
     /**
@@ -99,7 +99,7 @@ public class Personne {
      * @return chaîne
      */
     public String toString(){
-        return (this.nomPers+", "+this.prenomPers+", "+this.anNaissance);
+        return (this.nomPers+", "+this.prenomPers+", "+this.anNaissancePers);
     }
     
 }
